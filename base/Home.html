@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>  <!--link to style.js-->
+    <title>ComE-Tek</title>
+
+    
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- =======NAVIGATION side BAR=======-->
+      <aside>
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="logo-codepen"></ion-icon>
+                </span>
+                <h2 class="title">ComE-Tek</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="grid-outline"></ion-icon>
+                </span>
+                <span class="title">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="title">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="book-outline"></ion-icon>
+                </span>
+                <span class="title">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="list-outline"></ion-icon>
+                </span>
+                <span class="title">Tasks</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </span>
+                <span class="title">My ChatGPT</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="settings-outline"></ion-icon>
+                </span>
+                <span class="title">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="help-circle-outline"></ion-icon>
+                </span>
+                <span class="title">Help</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="logout-link">
+                <span class="icon">
+                  <ion-icon name="log-out-outline"></ion-icon>
+                </span>
+                <span class="title">Log Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Logout Confirmation Modal -->
+      <div id="logout-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Are you sure you want to logout?</p>
+          <button class="modal-button confirm-button" id="confirm-logout">
+            Yes
+          </button>
+          <button class="modal-button cancel-button" id="cancel-logout">
+            No
+          </button>
+        </div>
+      </div>
+
+      <!--=======MAIN====-->
+      <main>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <form action="#">
+            <div class="form-input">
+              <input type="search" placeholder="Search here" />
+              <button type="submit" class="search-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+          </form>
+          <input type="checkbox" id="switch-mode" hidden />
+          <label for="switch-mode" class="switch-mode"></label>
+          <a href="#" class="notification">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <span class="num">8</span>
+          </a>
+          <a href="#" class="profile">
+            <img src="/images/LOGO.jpg" />
+          </a>
+        </div>
+
+        <!--===========cards================-->
+
+        <div class="head-title">
+          <div class="left">
+            <h1>Dashboard</h1>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="cardBox">
+          <div class="card">
+            <div class="numbers">6</div>
+            <div class="cardName">Enrolled Courses</div>
+            <div class="iconBx">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div class="numbers">15</div>
+            <div class="cardName">Notifications</div>
+            <div class="iconBx">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div class="numbers">0</div>
+            <div class="cardName">Tasks</div>
+            <div class="iconBx">
+              <ion-icon name="checkmark-done-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div class="numbers">86</div>
+            <div class="cardName">Modules</div>
+            <div class="iconBx">
+              <ion-icon name="newspaper-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+   <!-- 
+        
+    
+        <div class="head-title">
+          <div class="left">
+            <h1>My ChatGPT</h1>
+            </ul>
+          </div>
+        </div>
+    
+       Form to interact with OpenAI 
+    <div class="openai-container">
+      <form id="openai-form">
+        <label for="user-input">Enter your message:</label><br>
+        <input type="text" id="user-input" name="user-input" size="50"><br><br>
+          <button id="submit-btn">Submit</button>
+
+    Display OpenAI response 
+    <div id="openai-response" class="openai-response">
+      -->
+        </div>
+      </div> -->
+    </div>
+  </main>
+
+   <script src="app.js"></script>
+
+   <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "FS5XoZS7zOA191VjwfZo8",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="FS5XoZS7zOA191VjwfZo8"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+  </body>
+</html>
