@@ -230,10 +230,10 @@ h1 {
   align-items: center;
 }
 .profile img {
-  width: 36px;
-  height: 36px;
-  object-fit: cover;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  object-fit: cover;
 }
 /*navigation*/
 
@@ -371,7 +371,7 @@ main .head-title .left .breadcrumb {
   }
 }
 
-/*open ai container
+/*open ai container*/
 .openai-container {
   margin: 20px;
   display: flex;
@@ -406,7 +406,7 @@ main .head-title .left .breadcrumb {
 }
 #submit-btn:hover {
   background-color: var(--blue1);
-} */
+}
 
 /*sign out modal*/
 .modal {
