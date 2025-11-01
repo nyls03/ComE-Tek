@@ -15,7 +15,7 @@ Chatbot Techy, powered by Chatbase
 
 
 
-<img width="671" height="1188" alt="image" src="https://github.com/user-attachments/assets/1c86c618-7468-40cd-a186-ed9621a15cc2" />
+<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/1c86c618-7468-40cd-a186-ed9621a15cc2" />
 
 
 
