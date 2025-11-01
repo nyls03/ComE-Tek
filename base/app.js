@@ -1,6 +1,6 @@
 /*========================Scripts starts here===================================-*/
 
-/* Sidebar toggle */
+// Sidebar toggle
 let toggle = document.querySelector(".toggle");
 let navigation = document.querySelector(".navigation");
 let main = document.querySelector(".main");
@@ -10,7 +10,7 @@ toggle.onclick = function () {
   main.classList.toggle("active");
 };
 
-/* Add hovered class in selected list item */
+// Add hovered class in selected list item
 let list = document.querySelectorAll(".navigation li");
 
 function activeLink() {
@@ -36,7 +36,7 @@ closeModal.onclick = function () {
 };
 
 confirmLogout.onclick = function () {
-  /* Redirect to the login form */
+  // Redirect to the login form
   window.location.href = "LoginForm.html";
 };
 
@@ -50,24 +50,23 @@ window.onclick = function (event) {
   }
 };
 
-
-/* Function to handle form submission */
+// Function to handle form submission
 document
   .getElementById("submit-btn")
   .addEventListener("click", async function (event) {
     event.preventDefault();
 
-    /* Get user input */
+    // Get user input
     const userInput = document.getElementById("user-input").value.trim();
 
-    /* Ensure there is input */
+    // Ensure there is input
     if (userInput === "") {
       alert("Please enter a message.");
       return;
     }
 
     try {
-      /* Make a request to OpenAI */
+      // Make a request to OpenAI
       const response = await fetch("https://api.openai.com/v1/completions", {
         method: "POST",
         headers: {
@@ -89,7 +88,7 @@ document
 
       const data = await response.json();
 
-      /* Display response */
+      // Display response
       document.getElementById(
         "openai-response"
       ).innerHTML = `<p>${data.choices[0].text.trim()}</p>`;
@@ -98,5 +97,3 @@ document
       alert("Failed to fetch response from OpenAI. Please try again.");
     }
   });
-
-
