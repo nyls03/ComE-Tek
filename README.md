@@ -1,4 +1,4 @@
-ComE-Tek Student Management System (Project Entry: 2024)
+# ComE-Tek Student Management System (Project Entry: 2024)
 
 
 Login Form
