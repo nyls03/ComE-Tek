@@ -20,3 +20,5 @@ Chatbot Techy, powered by Chatbase
 
 
 Developed an unfinished School Management System as part of the Software Design course in 2024. Although the project remains incomplete, it served as a foundation for enhancing my software development skills. I plan to complete it in the future as I continue to build my knowledge in AI data algorithms and Machine Learning, aiming to integrate these technologies into future system improvements.
+
+Stacks used: Javascript, HTML, CSS, AI API Integrated
