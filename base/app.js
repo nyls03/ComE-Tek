@@ -36,7 +36,7 @@ closeModal.onclick = function () {
 };
 
 confirmLogout.onclick = function () {
-  // Redirect to the login form
+  /* Redirect to the login form */
   window.location.href = "LoginForm.html";
 };
 
@@ -57,10 +57,10 @@ document
   .addEventListener("click", async function (event) {
     event.preventDefault();
 
-    // Get user input
+    /* Get user input */
     const userInput = document.getElementById("user-input").value.trim();
 
-    // Ensure there is input
+    /* Ensure there is input */
     if (userInput === "") {
       alert("Please enter a message.");
       return;
@@ -98,4 +98,5 @@ document
       alert("Failed to fetch response from OpenAI. Please try again.");
     }
   });
+
 
